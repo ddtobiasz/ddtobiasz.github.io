@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Appian Open Sans';
+    src: url('../fonts/opensans-light-appian.woff2') format('woff2'),
+         url('../fonts/opensans-light-appian.woff') format('woff'),
+         url('../fonts/opensans-light-appian.ttf') format('truetype'),
+         url('../fonts/opensans-light-appian.svg#Open%20Sanslight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Appian Open Sans';
+    src: url('../fonts/opensans-regular-appian.woff2') format('woff2'),
+         url('../fonts/opensans-regular-appian.woff') format('woff'),
+         url('../fonts/opensans-regular-appian.ttf') format('truetype'),
+         url('../fonts/opensans-regular-appian.svg#Open%20Sansregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Appian Open Sans';
+    src: url('../fonts/opensans-semibold-appian.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-appian.woff') format('woff'),
+         url('../fonts/opensans-semibold-appian.ttf') format('truetype'),
+         url('../fonts/opensans-semibold-appian.svg#Open%20Sanssemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Appian Open Sans';
+    src: url('../fonts/opensans-bold-appian.woff2') format('woff2'),
+         url('../fonts/opensans-bold-appian.woff') format('woff'),
+         url('../fonts/opensans-bold-appian.ttf') format('truetype'),
+         url('../fonts/opensans-bold-appian.svg#Open%20Sansbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}

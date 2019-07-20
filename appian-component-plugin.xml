@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<appian-component-plugin name="Rich Text" key="com.appian.richtext">
+  <plugin-info>
+    <description>A simple rich text editor</description>
+    <support supported="false" email="richtext-componentpluginsupport@appian.com" />
+    <vendor name="Appian" url="https://www.appian.com"/>
+    <version>1.0.13</version>
+  </plugin-info>
+  <component rule-name="richTextField" version="1.0.0">
+    <sdk-version>2.0.0</sdk-version>
+    <supported-user-agents>chrome firefox edge safari ie11 mobile</supported-user-agents>
+    <icon-file>icon.svg</icon-file>
+    <html-entry-point>index.html</html-entry-point>
+    <parameter>
+      <name>richText</name>
+      <category>input-output</category>
+      <type>Text</type>
+    </parameter>
+    <parameter>
+      <name>readOnly</name>
+      <category>input-only</category>
+      <type>Boolean</type>
+    </parameter>
+    <parameter>
+      <name>maxSize</name>
+      <category>input-only</category>
+      <type>Integer</type>
+    </parameter>
+    <parameter>
+      <name>placeholder</name>
+      <category>input-only</category>
+      <type>Text</type>
+    </parameter>
+    <parameter>
+      <name>enableProgressBar</name>
+      <category>input-only</category>
+      <type>Boolean</type>
+    </parameter>
+    <parameter>
+      <name>allowedFormats</name>
+      <category>input-only</category>
+      <type>Text?list</type>
+    </parameter>
+  </component>
+</appian-component-plugin>
