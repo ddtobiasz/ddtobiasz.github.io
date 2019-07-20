@@ -129,7 +129,7 @@ Appian.Component.onNewValue(function (allParameters) {
     /* Update tooltips for Mac vs. PC */
     var tooltipArray = Array.prototype.slice.call(document.querySelectorAll("[tooltip]"));
     tooltipArray.forEach(function (element) {
-      element.setAttribute("tooltip", element.getAttribute("tooltip").replace("%", IS_MAC ? "⌘" : "Ctrl"));
+      element.setAttribute("tooltip", element.getAttribute("tooltip").replace("%", IS_MAC ? "⌘" : "⌘"));
     });
 
     quill.on("text-change", function (delta, oldDelta, source) {
