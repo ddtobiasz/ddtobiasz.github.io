@@ -1,0 +1,118 @@
+html,
+body,
+div,
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  font-family: "Appian Open Sans", sans-serif;
+}
+#parent-container {
+  margin: 0px auto;
+}
+#quill-container {
+  border: 1px solid #ccc;
+  overflow-y: auto;
+}
+#sizeBar {
+  display: block;
+  width: 100%;
+  background-color: silver;
+  height: 15px;
+  max-height: 15px;
+}
+#usageMessage {
+  position: absolute;
+  color: white;
+  font-size: 0.7em;
+  padding: 0 0 0 2px;
+}
+#usageBar {
+  width: 0%;
+  height: 100%;
+  padding: 0;
+}
+.ql-disabled {
+  border: 0px !important;
+}
+.ql-disabled > .ql-editor {
+  padding: 0;
+}
+.ql-snow .ql-picker.ql-header.ql-wider {
+  width: 130px;
+}
+.ql-toolbar.ql-snow .ql-spacer {
+  margin-right: 15px;
+}
+.ql-snow .ql-editor h3 {
+  font-size: 2.14rem !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+  padding: 0 0 0.62rem !important;
+  /* color: #1d659c !important; */
+}
+.ql-snow .ql-editor h4 {
+  font-size: 1.5714rem !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+  padding: 0 0 12px !important;
+  color: #666 !important;
+}
+.ql-snow .ql-editor h5 {
+  font-size: 1.214rem !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  padding: 0 0 6px !important;
+  color: #666 !important;
+}
+.ql-editor p {
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+}
+.ql-editor p > span.ql-size-huge {
+  font-size: 2.2857rem !important;
+}
+.ql-editor p > span.ql-size-large {
+  font-size: 1.214rem !important;
+}
+.ql-editor p > span.ql-size-small {
+  font-size: 0.8571rem !important;
+}
+
+[tooltip] {
+  position: relative;
+}
+[tooltip]::after {
+  display: none;
+  content: attr(tooltip);
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-top: 2px;
+  transform: translateX(-50%) translateY(0%);
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: #fff;
+  padding: 4px 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  width: "auto";
+  pointer-events: none;
+  z-index: 1;
+}
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  display: block;
+}
+
+/* Print styles */
+@media print {
+  #quill-toolbar,
+  #sizeBar {
+    display: none !important;
+  }
+  #quill-container {
+    border: none;
+  }
+}

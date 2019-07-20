@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<script src='https://ps-sandbox1.appiancloud.com/suite/tempo/ui/sail-client/embeddedBootstrap.nocache.js' id='appianEmbedded'></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+  <link rel="stylesheet" type="text/css" href="tester.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  
+<meta charset="UTF-8">
+<title>Component Plugin Tester</title>
 </head>
 
 <body>
-  <div><appian-report reportUrlStub='FvdAFA'></appian-report></div>
+  <div class="topbar">Component Plugin Tester</div>
+  <div id="sidebar" class="sidebar">
+    <h2>Component Inputs</h2>
+    <form id="variableInputs" class="variableInputsContainer"></form>
+    <button id="sendButton">Send New Values</button>
+  </div>
+  <div id="content" class="content">
+    <div id="componentContainer" class="container"></div>
+  </div>
 </body>
+<script src="generateForm.js"></script>
 </html>

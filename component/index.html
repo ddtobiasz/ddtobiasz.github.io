@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./fonts/open-sans.css" />
+  <link rel="stylesheet" href="./custom.css" />
+  <link rel="stylesheet" href="./quill.snow.css" />
+  <!-- DO NOT EDIT THE FOLLOWING LINE-->
+  <script src="../Appian.js"></script>
+</head>
+
+<body>
+  <div id="parent-container">
+    <div id="quill-toolbar">
+      <span>
+        <select class="ql-header ql-wider" tooltip="Style">
+          <option class="ql-header" value="3">Large Header</option>
+          <option class="ql-header" value="4">Medium Header</option>
+          <option class="ql-header" value="5">Small Header</option>
+          <option selected>Normal Text</option>
+        </select>
+        <select class="ql-size" tooltip="Size">
+          <option value="10px">Small</option>
+          <option selected>Standard</option>
+          <option value="18px">Medium</option>
+          <option value="32px">Large</option>
+        </select>
+      </span>
+      <span>
+        <button class="ql-bold" tooltip="Bold (%+B)"></button>
+        <button class="ql-italic" tooltip="Italic (%+I)"></button>
+        <button class="ql-underline" tooltip="Underline (%+U)"></button>
+        <button class="ql-strike" tooltip="Strikethrough"></button>
+        <select class="ql-color" tooltip="Font Color"></select>
+        <select class="ql-background" tooltip="Background Color"></select>
+      </span>
+      <span>
+        <button class="ql-link" tooltip="Add Link (%+K)"></button>
+      </span>
+      <span>
+        <select class="ql-align" tooltip="Alignment"></select>
+        <button class="ql-indent" value="-1" tooltip="Unindent (Shift+Tab)"></button>
+        <button class="ql-indent" value="+1" tooltip="Indent (Tab)"></button>
+      </span>
+      <span>
+        <button class="ql-list" value="ordered" tooltip="Numbered List (%+Shift+7)"></button>
+        <button class="ql-list" value="bullet" tooltip="Bulleted List (%+Shift+8)"></button>
+      </span>
+      <span>
+        <button class="ql-clean" tooltip="Remove Formatting"></button>
+      </span>
+    </div>
+    <div id="quill-container"></div>
+    <div id="sizeBar">
+      <div id="usageMessage"></div>
+      <div id="usageBar"></div>
+    </div>
+  </div>
+
+  <script src="./quill.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
